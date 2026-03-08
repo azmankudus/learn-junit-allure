@@ -1,0 +1,1204 @@
+project:
+  id: SAMPLE
+  lead: Antigravity
+epics:
+- id: SAMPLE-E-1
+  name: Epic 1
+  description: Description for SAMPLE-E-1
+  success_criteria:
+  - Criterion SAMPLE-E-1.1
+  features:
+  - id: SAMPLE-F-1
+    name: Feature 1
+    success_criteria:
+    - Criterion SAMPLE-F-1.1
+    stories:
+    - id: SAMPLE-S-1
+      name: Story 1
+      description: Narrative for SAMPLE-S-1
+      success_criteria:
+      - Criterion SAMPLE-S-1.1
+      tasks:
+      - id: SAMPLE-T-1
+        name: Task 1 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 1 achieved
+        checks:
+        - id: SAMPLE-C-1
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-1
+        - id: SAMPLE-C-2
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-2
+        - id: SAMPLE-C-3
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-3
+        - id: SAMPLE-C-4
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-4
+        - id: SAMPLE-C-5
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-5
+      - id: SAMPLE-T-2
+        name: Task 2 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 2 achieved
+        checks:
+        - id: SAMPLE-C-6
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-6
+        - id: SAMPLE-C-7
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-7
+        - id: SAMPLE-C-8
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-8
+        - id: SAMPLE-C-9
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-9
+        - id: SAMPLE-C-10
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-10
+      - id: SAMPLE-T-3
+        name: Task 3 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 3 achieved
+        checks:
+        - id: SAMPLE-C-11
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-11
+        - id: SAMPLE-C-12
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-12
+        - id: SAMPLE-C-13
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-13
+        - id: SAMPLE-C-14
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-14
+        - id: SAMPLE-C-15
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-15
+      - id: SAMPLE-T-4
+        name: Task 4 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 4 achieved
+        checks:
+        - id: SAMPLE-C-16
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-16
+        - id: SAMPLE-C-17
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-17
+        - id: SAMPLE-C-18
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-18
+        - id: SAMPLE-C-19
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-19
+        - id: SAMPLE-C-20
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-20
+    - id: SAMPLE-S-2
+      name: Story 2
+      description: Narrative for SAMPLE-S-2
+      success_criteria:
+      - Criterion SAMPLE-S-2.1
+      tasks:
+      - id: SAMPLE-T-5
+        name: Task 5 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 5 achieved
+        checks:
+        - id: SAMPLE-C-21
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-21
+        - id: SAMPLE-C-22
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-22
+        - id: SAMPLE-C-23
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-23
+        - id: SAMPLE-C-24
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-24
+        - id: SAMPLE-C-25
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-25
+      - id: SAMPLE-T-6
+        name: Task 6 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 6 achieved
+        checks:
+        - id: SAMPLE-C-26
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-26
+        - id: SAMPLE-C-27
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-27
+        - id: SAMPLE-C-28
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-28
+        - id: SAMPLE-C-29
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-29
+        - id: SAMPLE-C-30
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-30
+      - id: SAMPLE-T-7
+        name: Task 7 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 7 achieved
+        checks:
+        - id: SAMPLE-C-31
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-31
+        - id: SAMPLE-C-32
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-32
+        - id: SAMPLE-C-33
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-33
+        - id: SAMPLE-C-34
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-34
+        - id: SAMPLE-C-35
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-35
+      - id: SAMPLE-T-8
+        name: Task 8 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 8 achieved
+        checks:
+        - id: SAMPLE-C-36
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-36
+        - id: SAMPLE-C-37
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-37
+        - id: SAMPLE-C-38
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-38
+        - id: SAMPLE-C-39
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-39
+        - id: SAMPLE-C-40
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-40
+  - id: SAMPLE-F-2
+    name: Feature 2
+    success_criteria:
+    - Criterion SAMPLE-F-2.1
+    stories:
+    - id: SAMPLE-S-3
+      name: Story 3
+      description: Narrative for SAMPLE-S-3
+      success_criteria:
+      - Criterion SAMPLE-S-3.1
+      tasks:
+      - id: SAMPLE-T-9
+        name: Task 9 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 9 achieved
+        checks:
+        - id: SAMPLE-C-41
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-41
+        - id: SAMPLE-C-42
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-42
+        - id: SAMPLE-C-43
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-43
+        - id: SAMPLE-C-44
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-44
+        - id: SAMPLE-C-45
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-45
+      - id: SAMPLE-T-10
+        name: Task 10 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 10 achieved
+        checks:
+        - id: SAMPLE-C-46
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-46
+        - id: SAMPLE-C-47
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-47
+        - id: SAMPLE-C-48
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-48
+        - id: SAMPLE-C-49
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-49
+        - id: SAMPLE-C-50
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-50
+      - id: SAMPLE-T-11
+        name: Task 11 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 11 achieved
+        checks:
+        - id: SAMPLE-C-51
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-51
+        - id: SAMPLE-C-52
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-52
+        - id: SAMPLE-C-53
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-53
+        - id: SAMPLE-C-54
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-54
+        - id: SAMPLE-C-55
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-55
+      - id: SAMPLE-T-12
+        name: Task 12 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 12 achieved
+        checks:
+        - id: SAMPLE-C-56
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-56
+        - id: SAMPLE-C-57
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-57
+        - id: SAMPLE-C-58
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-58
+        - id: SAMPLE-C-59
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-59
+        - id: SAMPLE-C-60
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-60
+    - id: SAMPLE-S-4
+      name: Story 4
+      description: Narrative for SAMPLE-S-4
+      success_criteria:
+      - Criterion SAMPLE-S-4.1
+      tasks:
+      - id: SAMPLE-T-13
+        name: Task 13 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 13 achieved
+        checks:
+        - id: SAMPLE-C-61
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-61
+        - id: SAMPLE-C-62
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-62
+        - id: SAMPLE-C-63
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-63
+        - id: SAMPLE-C-64
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-64
+        - id: SAMPLE-C-65
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-65
+      - id: SAMPLE-T-14
+        name: Task 14 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 14 achieved
+        checks:
+        - id: SAMPLE-C-66
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-66
+        - id: SAMPLE-C-67
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-67
+        - id: SAMPLE-C-68
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-68
+        - id: SAMPLE-C-69
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-69
+        - id: SAMPLE-C-70
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-70
+      - id: SAMPLE-T-15
+        name: Task 15 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 15 achieved
+        checks:
+        - id: SAMPLE-C-71
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-71
+        - id: SAMPLE-C-72
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-72
+        - id: SAMPLE-C-73
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-73
+        - id: SAMPLE-C-74
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-74
+        - id: SAMPLE-C-75
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-75
+      - id: SAMPLE-T-16
+        name: Task 16 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 16 achieved
+        checks:
+        - id: SAMPLE-C-76
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-76
+        - id: SAMPLE-C-77
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-77
+        - id: SAMPLE-C-78
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-78
+        - id: SAMPLE-C-79
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-79
+        - id: SAMPLE-C-80
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-80
+- id: SAMPLE-E-2
+  name: Epic 2
+  description: Description for SAMPLE-E-2
+  success_criteria:
+  - Criterion SAMPLE-E-2.1
+  features:
+  - id: SAMPLE-F-3
+    name: Feature 3
+    success_criteria:
+    - Criterion SAMPLE-F-3.1
+    stories:
+    - id: SAMPLE-S-5
+      name: Story 5
+      description: Narrative for SAMPLE-S-5
+      success_criteria:
+      - Criterion SAMPLE-S-5.1
+      tasks:
+      - id: SAMPLE-T-17
+        name: Task 17 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 17 achieved
+        checks:
+        - id: SAMPLE-C-81
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-81
+        - id: SAMPLE-C-82
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-82
+        - id: SAMPLE-C-83
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-83
+        - id: SAMPLE-C-84
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-84
+        - id: SAMPLE-C-85
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-85
+      - id: SAMPLE-T-18
+        name: Task 18 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 18 achieved
+        checks:
+        - id: SAMPLE-C-86
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-86
+        - id: SAMPLE-C-87
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-87
+        - id: SAMPLE-C-88
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-88
+        - id: SAMPLE-C-89
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-89
+        - id: SAMPLE-C-90
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-90
+      - id: SAMPLE-T-19
+        name: Task 19 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 19 achieved
+        checks:
+        - id: SAMPLE-C-91
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-91
+        - id: SAMPLE-C-92
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-92
+        - id: SAMPLE-C-93
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-93
+        - id: SAMPLE-C-94
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-94
+        - id: SAMPLE-C-95
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-95
+      - id: SAMPLE-T-20
+        name: Task 20 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 20 achieved
+        checks:
+        - id: SAMPLE-C-96
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-96
+        - id: SAMPLE-C-97
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-97
+        - id: SAMPLE-C-98
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-98
+        - id: SAMPLE-C-99
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-99
+        - id: SAMPLE-C-100
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-100
+    - id: SAMPLE-S-6
+      name: Story 6
+      description: Narrative for SAMPLE-S-6
+      success_criteria:
+      - Criterion SAMPLE-S-6.1
+      tasks:
+      - id: SAMPLE-T-21
+        name: Task 21 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 21 achieved
+        checks:
+        - id: SAMPLE-C-101
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-101
+        - id: SAMPLE-C-102
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-102
+        - id: SAMPLE-C-103
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-103
+        - id: SAMPLE-C-104
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-104
+        - id: SAMPLE-C-105
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-105
+      - id: SAMPLE-T-22
+        name: Task 22 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 22 achieved
+        checks:
+        - id: SAMPLE-C-106
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-106
+        - id: SAMPLE-C-107
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-107
+        - id: SAMPLE-C-108
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-108
+        - id: SAMPLE-C-109
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-109
+        - id: SAMPLE-C-110
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-110
+      - id: SAMPLE-T-23
+        name: Task 23 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 23 achieved
+        checks:
+        - id: SAMPLE-C-111
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-111
+        - id: SAMPLE-C-112
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-112
+        - id: SAMPLE-C-113
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-113
+        - id: SAMPLE-C-114
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-114
+        - id: SAMPLE-C-115
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-115
+      - id: SAMPLE-T-24
+        name: Task 24 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 24 achieved
+        checks:
+        - id: SAMPLE-C-116
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-116
+        - id: SAMPLE-C-117
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-117
+        - id: SAMPLE-C-118
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-118
+        - id: SAMPLE-C-119
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-119
+        - id: SAMPLE-C-120
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-120
+  - id: SAMPLE-F-4
+    name: Feature 4
+    success_criteria:
+    - Criterion SAMPLE-F-4.1
+    stories:
+    - id: SAMPLE-S-7
+      name: Story 7
+      description: Narrative for SAMPLE-S-7
+      success_criteria:
+      - Criterion SAMPLE-S-7.1
+      tasks:
+      - id: SAMPLE-T-25
+        name: Task 25 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 25 achieved
+        checks:
+        - id: SAMPLE-C-121
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-121
+        - id: SAMPLE-C-122
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-122
+        - id: SAMPLE-C-123
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-123
+        - id: SAMPLE-C-124
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-124
+        - id: SAMPLE-C-125
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-125
+      - id: SAMPLE-T-26
+        name: Task 26 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 26 achieved
+        checks:
+        - id: SAMPLE-C-126
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-126
+        - id: SAMPLE-C-127
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-127
+        - id: SAMPLE-C-128
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-128
+        - id: SAMPLE-C-129
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-129
+        - id: SAMPLE-C-130
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-130
+      - id: SAMPLE-T-27
+        name: Task 27 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 27 achieved
+        checks:
+        - id: SAMPLE-C-131
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-131
+        - id: SAMPLE-C-132
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-132
+        - id: SAMPLE-C-133
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-133
+        - id: SAMPLE-C-134
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-134
+        - id: SAMPLE-C-135
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-135
+      - id: SAMPLE-T-28
+        name: Task 28 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 28 achieved
+        checks:
+        - id: SAMPLE-C-136
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-136
+        - id: SAMPLE-C-137
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-137
+        - id: SAMPLE-C-138
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-138
+        - id: SAMPLE-C-139
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-139
+        - id: SAMPLE-C-140
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-140
+    - id: SAMPLE-S-8
+      name: Story 8
+      description: Narrative for SAMPLE-S-8
+      success_criteria:
+      - Criterion SAMPLE-S-8.1
+      tasks:
+      - id: SAMPLE-T-29
+        name: Task 29 - ALL_PASSED
+        description: 'Scenario: ALL_PASSED.'
+        success_criterion: Task objective 29 achieved
+        checks:
+        - id: SAMPLE-C-141
+          scenario: Check 1 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-141
+        - id: SAMPLE-C-142
+          scenario: Check 2 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-142
+        - id: SAMPLE-C-143
+          scenario: Check 3 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-143
+        - id: SAMPLE-C-144
+          scenario: Check 4 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-144
+        - id: SAMPLE-C-145
+          scenario: Check 5 (ALL_PASSED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-145
+      - id: SAMPLE-T-30
+        name: Task 30 - ALL_FAILED
+        description: 'Scenario: ALL_FAILED.'
+        success_criterion: Task objective 30 achieved
+        checks:
+        - id: SAMPLE-C-146
+          scenario: Check 1 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-146
+        - id: SAMPLE-C-147
+          scenario: Check 2 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-147
+        - id: SAMPLE-C-148
+          scenario: Check 3 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-148
+        - id: SAMPLE-C-149
+          scenario: Check 4 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-149
+        - id: SAMPLE-C-150
+          scenario: Check 5 (ALL_FAILED)
+          input: ACTUAL
+          operator: EQUALS
+          expected: EXPECTED
+          failed_message: Failed for SAMPLE-C-150
+      - id: SAMPLE-T-31
+        name: Task 31 - ALL_BROKEN
+        description: 'Scenario: ALL_BROKEN.'
+        success_criterion: Task objective 31 achieved
+        checks:
+        - id: SAMPLE-C-151
+          scenario: Check 1 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-151
+        - id: SAMPLE-C-152
+          scenario: Check 2 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-152
+        - id: SAMPLE-C-153
+          scenario: Check 3 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-153
+        - id: SAMPLE-C-154
+          scenario: Check 4 (ALL_BROKEN)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-154
+        - id: SAMPLE-C-155
+          scenario: Check 5 (ALL_BROKEN)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-155
+      - id: SAMPLE-T-32
+        name: Task 32 - MIXED
+        description: 'Scenario: MIXED.'
+        success_criterion: Task objective 32 achieved
+        checks:
+        - id: SAMPLE-C-156
+          scenario: Check 1 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-156
+        - id: SAMPLE-C-157
+          scenario: Check 2 (MIXED)
+          input: Mismatch
+          operator: EQUALS
+          expected: Match
+          failed_message: Failed for SAMPLE-C-157
+        - id: SAMPLE-C-158
+          scenario: Check 3 (MIXED)
+          input: TRIGGER_RUNTIME
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-158
+        - id: SAMPLE-C-159
+          scenario: Check 4 (MIXED)
+          input: TRIGGER_ERROR
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-159
+        - id: SAMPLE-C-160
+          scenario: Check 5 (MIXED)
+          input: PASS
+          operator: EQUALS
+          expected: PASS
+          failed_message: Failed for SAMPLE-C-160
